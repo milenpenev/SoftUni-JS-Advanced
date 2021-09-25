@@ -14,3 +14,5 @@ for (let i = 0; i < myArr.length; i++){
 for (let item of myArr) {
     console.log(item)
 }
+
+console.log(myArr.join())
