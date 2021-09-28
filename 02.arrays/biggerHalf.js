@@ -1,6 +1,6 @@
 function biggerHalf(array) {
     const newArray = array.sort((a, b) => a - b);
-    const bigger = newArray.slice(array.length/2)
+    const bigger = newArray.slice(array.length / 2)
     console.log('[' + bigger.join(', ') + ']')
 }
 

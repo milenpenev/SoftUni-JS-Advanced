@@ -1,7 +1,7 @@
 function solve(arr) {
     let number = 1;
     let result = [];
-    
+
     arr.forEach((el) => {
         if (el == 'add') {
             result.push(number);
@@ -17,8 +17,8 @@ function solve(arr) {
     }
 }
 
-solve(['add', 
-'add', 
-'add', 
-'add']
+solve(['add',
+    'add',
+    'add',
+    'add']
 )

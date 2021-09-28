@@ -7,9 +7,9 @@
 // }
 
 function names(array) {
-    const result = array.sort((a,b) => a.localeCompare(b));
+    const result = array.sort((a, b) => a.localeCompare(b));
     let orderNumber = 1;
-    array.forEach((el) =>{
+    array.forEach((el) => {
         console.log(`${orderNumber}.${el}`);
         orderNumber++;
     })
