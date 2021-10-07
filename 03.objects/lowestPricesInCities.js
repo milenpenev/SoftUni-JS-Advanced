@@ -10,8 +10,13 @@ function lowestPrice(array) {
         }
         catalogue[product][town] = price;
     });
-    console.log(catalogue)
+    for (const prod in catalogue) {
+        const sorted = Object.entries(catalogue[prod]).sort((a,b) => a[1] - b[1])
 
+        console.log(`${prod} -> ${sorted[0][1]} (${sorted[0][0]})`)
+    }
+
+    
 }
 
 lowestPrice(['Sample Town | Sample Product | 1000',
