@@ -1,4 +1,4 @@
-function fromJSONToHTMLTable(input){
+function fromJSONToHTMLTable(input) {
     function escapeHtml(str) {
         // html escape from Underscore.js https://coderwall.com/p/ostduq/escape-html-with-javascript
         let entityMap = {

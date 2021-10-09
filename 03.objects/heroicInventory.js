@@ -14,6 +14,6 @@ function inventory(arr) {
 
 
 console.log(inventory(['Isacc / 25 / Apple, GravityGun',
-'Derek / 12 / BarrelVest, DestructionSword',
-'Hes / 1 / Desolator, Sentinel, Antara']
+    'Derek / 12 / BarrelVest, DestructionSword',
+    'Hes / 1 / Desolator, Sentinel, Antara']
 ))
