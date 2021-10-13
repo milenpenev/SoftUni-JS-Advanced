@@ -11,6 +11,6 @@ function deleteByEmail() {
     if (removed){
         document.getElementById('result').textContent = 'Deleted.'
     } else {
-        document.getElementById('result').textContent = 'Not Found.'
+        document.getElementById('result').textContent = 'Not found.'
     }
 }
