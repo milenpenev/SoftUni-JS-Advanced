@@ -4,6 +4,7 @@ function solve() {
 
    const cart = [];
    const output = document.getElementsByTagName('textarea')[0];
+   output.value = '';
 
 
    function onClick(ev) {
