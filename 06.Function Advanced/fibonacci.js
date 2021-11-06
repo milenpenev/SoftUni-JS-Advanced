@@ -6,7 +6,7 @@ function getFibonator() {
         let nextNumber = n1 + n2;
         n1 = n2;
         n2 = nextNumber;
-        return nextNumber;
+        return n1;
     }
     return getNumber;
 }
