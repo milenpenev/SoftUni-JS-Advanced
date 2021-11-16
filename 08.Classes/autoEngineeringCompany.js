@@ -3,24 +3,26 @@ function solve(input) {
 
     input.forEach(element => {
         let [brand, model, count] = element.split(" | ");
-        price = Number(count);
+        count = Number(count);
         if (carBrands.has(brand)) {
-            let carBrand = carBrands.set(brand);
+            let carBrand = carBrands.get(brand);
             if (carBrand.has(model)) {
                 let carModel = carBrand.get(model);
                 carModel += count;
-                carBrand.set(model. carModel)
+                carBrand.set(model, carModel)
             } else {
                 carBrand.set(model, count);
             }
         } else {
-            carBrands.set(brand, new Map());
+            const modelMap = new Map();
+            modelMap.set(model, count)
+            carBrands.set(brand, modelMap);
         }
     });
     for (const key of carBrands.keys()){
         console.log(key);
         let brand = carBrands.get(key);
-        for (const [model, count] of brand) {
+        for (let [model, count] of brand) {
             console.log(`###${model}, -> ${count}`)
         }
     }
